@@ -1,0 +1,33 @@
+{
+  "name": "staffpass",
+  "version": "1.0.0",
+  "description": "AI employee badge (社員証) for Grok Bot / Cursor. Connects to the hosted Staffpass Gateway via remote MCP — permission, approval, and audit without pasting secrets into chat.",
+  "author": {
+    "name": "TOKYO307",
+    "email": "info@tokyo307inc.com"
+  },
+  "homepage": "https://staffpass.sealith.com",
+  "repository": "https://github.com/tokyo307/staffpass",
+  "license": "MIT",
+  "keywords": [
+    "staffpass",
+    "mcp",
+    "grok-bot",
+    "ai-employee",
+    "governance",
+    "sealith",
+    "approval"
+  ],
+  "logo": "assets/logo.svg",
+  "variables": {
+    "type": "object",
+    "properties": {
+      "STAFFPASS_EMPLOYEE_KEY": {
+        "type": "string",
+        "title": "Staffpass社員証キー",
+        "description": "StaffpassダッシュボードでAI社員を雇ったときに一度だけ表示される gb_emp_… キー。Authorization Bearer に使います。管理用の gb_adm_ は入れないでください。"
+      }
+    },
+    "required": ["STAFFPASS_EMPLOYEE_KEY"]
+  }
+}
