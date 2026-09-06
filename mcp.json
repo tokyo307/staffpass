@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "staffpass": {
+      "url": "https://staffpass.sealith.com/api/mcp",
+      "headers": {
+        "Authorization": "Bearer ${STAFFPASS_EMPLOYEE_KEY}"
+      }
+    }
+  }
+}
